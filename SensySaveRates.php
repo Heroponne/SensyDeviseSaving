@@ -22,7 +22,9 @@ while (true) {
 		$crossesAndRates[$crossArray[$i]] = $APIresult['rate']['rate'];
 	}
 
-	// Currency pairs and rates are saved in the file in JSON format, with "\n" to have it more readable for human, but for pure JSON we can remove "\n"
+	// Currency pairs and rates are saved in the file in JSON format, with "\n" to have it more readable for human
+	// For pure JSON, remove "\n"
+	// To keep only current rates, remove FILE_APPEND option
 	file_put_contents($filename, json_encode($crossesAndRates) . "\n", FILE_APPEND);
 
 	//Waiting 10 minutes before next loading
