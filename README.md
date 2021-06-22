@@ -10,3 +10,5 @@ CLI :
 * php SensySaveRates.php
 
 A file with currency pairs and rates will be created in the directory, and every 10 minutes, the new rates will be append in the file.
+## Author
+Florence Orgeret
