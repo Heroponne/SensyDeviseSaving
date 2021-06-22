@@ -1,7 +1,7 @@
 # SensyDeviseSaving
 Technical test optional for Sensy
 ## Purpose
-Save all rates of all currency pairs available with iBanFirst API.
+Save all rates of all currency pairs available with iBanFirst API, in JSON format.
 ## How to use it ?
 Having Php 7.2 installed on computer
 CLI :
@@ -9,6 +9,6 @@ CLI :
 * cd SensyDeviseSaving
 * php SensySaveRates.php
 
-A file with currency pairs and rates will be created in the directory, and every 10 minutes, the new rates will be append in the file.
+A file with currency pairs and rates will be created in the directory, and every 10 minutes, the new rates will be append in the file "saved_rates.txt".
 ## Author
 Florence Orgeret
